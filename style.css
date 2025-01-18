@@ -14,21 +14,31 @@
     padding: 10px 24px 10px 24px;
     text-align: left;
     color: #fff;
+    font-weight: 400;
   }
   .text-color{
     color: #3A3A3A;
   }
 
-  /* body style */
-
   body{
     background: rgb(170, 170, 170);
+
   }
 
   .display-flex{
     display: flex;
   }
-
+  .section-title{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .section-description{
+    font-size: 1rem;
+  }
+.main{
+    max-width: 85%;
+    margin: 0 auto;
+}
   /* styles start here */ 
 
 
@@ -66,11 +76,28 @@
     transform: scale(1.2);
   }
 
+  /* banner part */
+.banner{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.banner-content{
+    max-width: 50% ;
+}
+  .banner-img{
+    background-image: url("images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
   /* Responsive part */
 
   /* mobile Responsive */
   @media  screen and (max-width:576px) {
-    .navbar{
+    .navbar,
+    .banner{
         flex-direction:column;
     }
     .nav-links{
@@ -79,6 +106,10 @@
     }
      .logo h1{
         display: none;
+     }
+     .banner-img img,
+     .banner-content{
+        width: 100%;
      }
   }
   /* tablet mode */
