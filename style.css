@@ -25,13 +25,16 @@
     background: rgb(170, 170, 170);
   }
 
+  .display-flex{
+    display: flex;
+  }
+
   /* styles start here */ 
 
 
   /* header part */
 
   .navbar{
-    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 100px;
@@ -41,7 +44,6 @@
   }
   .nav-links{
     list-style: none;
-    display: flex;
     gap: 20px;
     align-items: center;
   }
@@ -62,4 +64,26 @@
   }
   .nav-links li :hover{
     transform: scale(1.2);
+  }
+
+  /* Responsive part */
+
+  /* mobile Responsive */
+  @media  screen and (max-width:576px) {
+    .navbar{
+        flex-direction:column;
+    }
+    .nav-links{
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+     .logo h1{
+        display: none;
+     }
+  }
+  /* tablet mode */
+  @media screen and (min-width:577px) and (max-width:992px) {
+    .navbar{
+        padding: 20px 50px;
+    }
   }
