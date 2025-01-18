@@ -21,6 +21,7 @@
     color: #fff;
     font-weight: 400;
     border: none;
+    margin: 20px 0;
 
   }
   .primary-btn:hover{
@@ -179,8 +180,16 @@
 }
 
 
-
-
+.see-more{
+    text-decoration: none;
+    color: #E02C6D;
+    margin-top: 50px;
+   display: block;
+   text-align: end;
+}
+.see-more .fa-arrow-right{
+    color: #E02C6D;
+}
 
 
   /* Responsive part */
