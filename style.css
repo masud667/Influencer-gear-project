@@ -18,3 +18,48 @@
   .text-color{
     color: #3A3A3A;
   }
+
+  /* body style */
+
+  body{
+    background: rgb(170, 170, 170);
+  }
+
+  /* styles start here */ 
+
+
+  /* header part */
+
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+  }
+  .logo h1{
+    font-size: 1.5rem;
+  }
+  .nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+ 
+  .nav-links a,i{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .nav-links a:hover{
+    color: #E02C6D;
+    transition: all .3s linear;
+  }
+  .nav-links i:hover{
+    color: #E02C6D;
+    transition: all .2s;
+  }
+  .nav-links li :hover{
+    transform: scale(1.2);
+  }
