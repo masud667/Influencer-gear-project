@@ -96,9 +96,11 @@
 
   /* mobile Responsive */
   @media  screen and (max-width:576px) {
-    .navbar,
-    .banner{
+    .navbar{
         flex-direction:column;
+    }
+    .banner{
+        flex-direction: column-reverse;
     }
     .nav-links{
        flex-wrap: wrap;
@@ -107,14 +109,30 @@
      .logo h1{
         display: none;
      }
-     .banner-img img,
-     .banner-content{
+     .banner-img img{
         width: 100%;
      }
+     .banner-content{
+        max-width: 100% ;
+    }
+  
   }
   /* tablet mode */
   @media screen and (min-width:577px) and (max-width:992px) {
     .navbar{
         padding: 20px 50px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-img{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .banner-img img{
+        width: 100%;
+     }
+     .banner-content{
+        max-width: 100% ;
     }
   }
